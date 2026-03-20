@@ -1,0 +1,9 @@
+{
+  "name": "paradise-city",
+  "version": "1.0.0",
+  "description": "Paradise City - Digital Mani Stone Ecosystem",
+  "scripts": {
+    "build": "echo 'Static site - no build needed'",
+    "start": "npx serve ."
+  }
+}
