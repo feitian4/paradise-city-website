@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradise City | Digital Mani Stone Ecosystem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-dark: #0a0a0f;
+            --primary-navy: #1a1a2e;
+            --accent-gold: #d4a574;
+            --accent-crimson: #8b2635;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --border-subtle: rgba(255,255,255,0.1);
+            --gradient-hero: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #16213e 100%);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--primary-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Language Switcher */
+        .language-switcher {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .lang-btn {
+            padding: 0.4rem 0.8rem;
+            border: 1px solid var(--border-subtle);
+            background: transparent;
+            color: var(--text-secondary);
+            border-radius: 20px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .lang-btn:hover {
+            border-color: var(--accent-gold);
+            color: var(--accent-gold);
+        }
+
+        .lang-btn.active {
+            background: var(--accent-gold);
+            color: var(--primary-dark);
+            border-color: var(--accent-gold);
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background: rgba(10, 10, 15, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--accent-gold);
+            letter-spacing: 0.05em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            transition: color 0.3s ease;
+            letter-spacing: 0.02em;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-gold);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: var(--gradient-hero);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="%23d4a574" stroke-width="0.1" opacity="0.3"/></svg>') repeat;
+            background-size: 200px;
+            opacity: 0.1;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            max-width: 900px;
+            padding: 0 2rem;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            border: 1px solid var(--accent-gold);
+            border-radius: 50px;
+            font-size: 0.75rem;
+            color: var(--accent-gold);
+            letter-spacing: 0.1em;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 500;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero h1 span {
+            color: var(--accent-gold);
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            letter-spacing: 0.02em;
+        }
+
+        .btn-primary {
+            background: var(--accent-gold);
+            color: var(--primary-dark);
+        }
+
+        .btn-primary:hover {
+            background: #c49a6a;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--border-subtle);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--accent-gold);
+            color: var(--accent-gold);
+        }
+
+        /* Sections */
+        section {
+            padding: 8rem 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Mission Section */
+        .mission {
+            background: linear-gradient(180deg, var(--primary-dark) 0%, #12121a 100%);
+        }
+
+        .mission-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .mission-card {
+            padding: 2.5rem;
+            border: 1px solid var(--border-subtle);
+            border-radius: 16px;
+            transition: all 0.3s ease;
+            background: rgba(255,255,255,0.02);
+        }
+
+        .mission-card:hover {
+            border-color: var(--accent-gold);
+            transform: translateY(-5px);
+        }
+
+        .mission-card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent-gold);
+        }
+
+        .mission-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Tokenomics Section */
+        .tokenomics {
+            background: var(--primary-navy);
+        }
+
+        .tokenomics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .token-card {
+            padding: 2rem;
+            background: rgba(255,255,255,0.03);
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid var(--border-subtle);
+        }
+
+        .token-card .number {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--accent-gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .token-card .label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Roadmap */
+        .roadmap-timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .roadmap-timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, var(--accent-gold), var(--accent-crimson));
+        }
+
+        .timeline-item {
+            position: relative;
+            padding: 2rem 0 2rem 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            top: 2.5rem;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent-gold);
+            border: 3px solid var(--primary-dark);
+        }
+
+        .timeline-year {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            color: var(--accent-gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-content h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .timeline-content p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Team */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .team-card {
+            text-align: center;
+            padding: 2rem;
+            border: 1px solid var(--border-subtle);
+            border-radius: 16px;
+            background: rgba(255,255,255,0.02);
+        }
+
+        .team-card .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-crimson));
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--primary-dark);
+            font-weight: 600;
+        }
+
+        .team-card h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .team-card .role {
+            color: var(--accent-gold);
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+
+        .team-card p {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        /* Footer */
+        footer {
+            padding: 4rem;
+            text-align: center;
+            border-top: 1px solid var(--border-subtle);
+            background: var(--primary-dark);
+        }
+
+        footer .logo {
+            margin-bottom: 1rem;
+        }
+
+        footer p {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .social-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-gold);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem 1.5rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            section {
+                padding: 4rem 1.5rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Paradise City</div>
+        <ul class="nav-links">
+            <li><a href="#mission" data-i18n="nav_mission">Mission</a></li>
+            <li><a href="#tokenomics" data-i18n="nav_tokenomics">Tokenomics</a></li>
+            <li><a href="#roadmap" data-i18n="nav_roadmap">Roadmap</a></li>
+            <li><a href="#team" data-i18n="nav_team">Team</a></li>
+        </ul>
+        <div class="language-switcher">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="zh">中文</button>
+            <button class="lang-btn" data-lang="bo">བོད་ཡིག</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge" data-i18n="hero_badge">Web3 × Tibetan Culture × Metaverse</div>
+            <h1>Paradise <span>City</span></h1>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">
+                A digital Mani Stone ecosystem bridging ancient Tibetan wisdom with modern blockchain technology. 
+                Building a metaverse where spirituality meets decentralized finance.
+            </p>
+            <div class="hero-cta">
+                <a href="#mission" class="btn btn-primary" data-i18n="hero_cta_primary">Explore Ecosystem</a>
+                <a href="#tokenomics" class="btn btn-secondary" data-i18n="hero_cta_secondary">View Tokenomics</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission" id="mission">
+        <div class="section-header fade-in">
+            <h2 data-i18n="mission_title">Our Mission</h2>
+            <p data-i18n="mission_subtitle">Preserving sacred traditions while pioneering the future of digital spirituality and finance.</p>
+        </div>
+        <div class="mission-grid">
+            <div class="mission-card fade-in">
+                <h3 data-i18n="mission_card1_title">🪨 Cultural Heritage</h3>
+                <p data-i18n="mission_card1_text">The Mani stone tradition represents centuries of Tibetan Buddhist practice. Each stone carries prayers, mantras, and blessings. We digitize this sacred art form, making it accessible to a global community while preserving its spiritual essence.</p>
+            </div>
+            <div class="mission-card fade-in">
+                <h3 data-i18n="mission_card2_title">🔗 Decentralized Finance</h3>
+                <p data-i18n="mission_card2_text">Building a complete financial ecosystem including payments, investments, lending, and derivatives. Our DAO governance ensures community-driven development and transparent decision-making.</p>
+            </div>
+            <div class="mission-card fade-in">
+                <h3 data-i18n="mission_card3_title">🌐 Metaverse Integration</h3>
+                <p data-i18n="mission_card3_text">Creating an immersive 1:1 mapping of Shangri-La in the digital realm. From virtual temples to digital museums, experience Tibetan culture in a fully realized metaverse environment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section class="tokenomics" id="tokenomics">
+        <div class="section-header fade-in">
+            <h2 data-i18n="tokenomics_title">Tokenomics</h2>
+            <p data-i18n="tokenomics_subtitle">Transparent allocation designed for sustainable ecosystem growth.</p>
+        </div>
+        <div class="tokenomics-grid">
+            <div class="token-card fade-in">
+                <div class="number">50M</div>
+                <div class="label" data-i18n="token_supply">Total Supply</div>
+            </div>
+            <div class="token-card fade-in">
+                <div class="number">5M</div>
+                <div class="label" data-i18n="token_nft">NFT Collection</div>
+            </div>
+            <div class="token-card fade-in">
+                <div class="number">$100</div>
+                <div class="label" data-i18n="token_price">NFT Floor Price</div>
+            </div>
+            <div class="token-card fade-in">
+                <div class="number">$500M</div>
+                <div class="label" data-i18n="token_raise">Target Raise</div>
+            </div>
+        </div>
+        <div style="margin-top: 3rem; text-align: center;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; max-width: 800px; margin: 0 auto;">
+                <div style="padding: 1.5rem; border: 1px solid var(--border-subtle); border-radius: 12px;">
+                    <div style="color: var(--accent-gold); font-weight: 600; margin-bottom: 0.5rem;" data-i18n="token_team">Team (30%)</div>
+                    <div style="color: var(--text-secondary); font-size: 0.85rem;" data-i18n="token_team_desc">1-2 year lockup</div>
+                </div>
+                <div style="padding: 1.5rem; border: 1px solid var(--border-subtle); border-radius: 12px;">
+                    <div style="color: var(--accent-gold); font-weight: 600; margin-bottom: 0.5rem;" data-i18n="token_investors">Investors (50%)</div>
+                    <div style="color: var(--text-secondary); font-size: 0.85rem;" data-i18n="token_investors_desc">ICO/IEO distribution</div>
+                </div>
+                <div style="padding: 1.5rem; border: 1px solid var(--border-subtle); border-radius: 12px;">
+                    <div style="color: var(--accent-gold); font-weight: 600; margin-bottom: 0.5rem;" data-i18n="token_community">Community (20%)</div>
+                    <div style="color: var(--text-secondary); font-size: 0.85rem;" data-i18n="token_community_desc">Rewards & incentives</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap">
+        <div class="section-header fade-in">
+            <h2 data-i18n="roadmap_title">Roadmap</h2>
+            <p data-i18n="roadmap_subtitle">Our journey to build the Paradise City ecosystem.</p>
+        </div>
+        <div class="roadmap-timeline">
+            <div class="timeline-item fade-in">
+                <div class="timeline-year">2024 Q1</div>
+                <div class="timeline-content">
+                    <h4 data-i18n="roadmap_q1_title">Product Development Launch</h4>
+                    <p data-i18n="roadmap_q1_text">Blockchain protocol development, wallet creation, and trading platform architecture</p>
+                </div>
+            </div>
+            <div class="timeline-item fade-in">
+                <div class="timeline-year">2024 Q2</div>
+                <div class="timeline-content">
+                    <h4 data-i18n="roadmap_q2_title">Test Network Deployment</h4>
+                    <p data-i18n="roadmap_q2_text">Public testing phase with community feedback and system optimization</p>
+                </div>
+            </div>
+            <div class="timeline-item fade-in">
+                <div class="timeline-year">2024 Q3</div>
+                <div class="timeline-content">
+                    <h4 data-i18n="roadmap_q3_title">Mainnet Launch</h4>
+                    <p data-i18n="roadmap_q3_text">Official network launch enabling real transactions and user onboarding</p>
+                </div>
+            </div>
+            <div class="timeline-item fade-in">
+                <div class="timeline-year">2024 Q4</div>
+                <div class="timeline-content">
+                    <h4 data-i18n="roadmap_q4_title">Global Marketing Campaign</h4>
+                    <p data-i18n="roadmap_q4_text">Strategic partnerships, social media campaigns, and community events</p>
+                </div>
+            </div>
+            <div class="timeline-item fade-in">
+                <div class="timeline-year">2025</div>
+                <div class="timeline-content">
+                    <h4 data-i18n="roadmap_2025_title">DeFi Ecosystem Expansion</h4>
+                    <p data-i18n="roadmap_2025_text">DApp platform launch, lending protocols, insurance products, and derivatives trading</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <div class="section-header fade-in">
+            <h2 data-i18n="team_title">Core Team</h2>
+            <p data-i18n="team_subtitle">Industry veterans combining blockchain expertise with cultural vision.</p>
+        </div>
+        <div class="team-grid">
+            <div class="team-card fade-in">
+                <div class="avatar">G</div>
+                <h4>Goddard</h4>
+                <div class="role" data-i18n="team_goddard_role">Blockchain Pioneer</div>
+                <p data-i18n="team_goddard_text">Internationally renowned data engineer, early blockchain technology pioneer with deep expertise in distributed systems.</p>
+            </div>
+            <div class="team-card fade-in">
+                <div class="avatar">H</div>
+                <h4>Harvey</h4>
+                <div class="role" data-i18n="team_harvey_role">Chief Architect</div>
+                <p data-i18n="team_harvey_text">PhD from Yale University, expert in system architecture and database design. Former lead engineer at major exchanges.</p>
+            </div>
+            <div class="team-card fade-in">
+                <div class="avatar">L</div>
+                <h4>Lambert</h4>
+                <div class="role" data-i18n="team_lambert_role">Blockchain Application</div>
+                <p data-i18n="team_lambert_text">Global blockchain application expert, US Business Council member with extensive enterprise blockchain deployment experience.</p>
+            </div>
+            <div class="team-card fade-in">
+                <div class="avatar">M</div>
+                <h4>Meredith</h4>
+                <div class="role" data-i18n="team_meredith_role">Engineering Lead</div>
+                <p data-i18n="team_meredith_text">15 years of technical development experience, former engineering management roles at Google and Amazon.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="logo">Paradise City</div>
+        <div class="social-links">
+            <a href="#">Twitter</a>
+            <a href="#">Discord</a>
+            <a href="#">Telegram</a>
+            <a href="#">GitHub</a>
+        </div>
+        <p data-i18n="footer_disclaimer">
+            Disclaimer: This project is for informational purposes only. Participation in any token sale or investment activity involves risks. 
+            Please consult with professional advisors before making any financial decisions.
+        </p>
+        <p style="margin-top: 1rem; font-size: 0.75rem; color: rgba(255,255,255,0.3);" data-i18n="footer_copyright">
+            © 2024 Paradise City. All rights reserved. Bridging ancient wisdom with modern technology.
+        </p>
+    </footer>
+
+    <!-- Language Data -->
+    <script>
+        const i18n = {
+            en: {
+                nav_mission: "Mission",
+                nav_tokenomics: "Tokenomics",
+                nav_roadmap: "Roadmap",
+                nav_team: "Team",
+                hero_badge: "Web3 × Tibetan Culture × Metaverse",
+                hero_title: "Paradise City",
+                hero_subtitle: "A digital Mani Stone ecosystem bridging ancient Tibetan wisdom with modern blockchain technology. Building a metaverse where spirituality meets decentralized finance.",
+                hero_cta_primary: "Explore Ecosystem",
+                hero_cta_secondary: "View Tokenomics",
+                mission_title: "Our Mission",
+                mission_subtitle: "Preserving sacred traditions while pioneering the future of digital spirituality and finance.",
+                mission_card1_title: "Cultural Heritage",
+                mission_card1_text: "The Mani stone tradition represents centuries of Tibetan Buddhist practice. Each stone carries prayers, mantras, and blessings. We digitize this sacred art form, making it accessible to a global community while preserving its spiritual essence.",
+                mission_card2_title: "Decentralized Finance",
+                mission_card2_text: "Building a complete financial ecosystem including payments, investments, lending, and derivatives. Our DAO governance ensures community-driven development and transparent decision-making.",
+                mission_card3_title: "Metaverse Integration",
+                mission_card3_text: "Creating an immersive 1:1 mapping of Shangri-La in the digital realm. From virtual temples to digital museums, experience Tibetan culture in a fully realized metaverse environment.",
+                tokenomics_title: "Tokenomics",
+                tokenomics_subtitle: "Transparent allocation designed for sustainable ecosystem growth.",
+                token_supply: "Total Supply",
+                token_nft: "NFT Collection",
+                token_price: "NFT Floor Price",
+                token_raise: "Target Raise",
+                token_team: "Team (30%)",
+                token_team_desc: "1-2 year lockup",
+                token_investors: "Investors (50%)",
+                token_investors_desc: "ICO/IEO distribution",
+                token_community: "Community (20%)",
+                token_community_desc: "Rewards & incentives",
+                roadmap_title: "Roadmap",
+                roadmap_subtitle: "Our journey to build the Paradise City ecosystem.",
+                roadmap_q1_title: "Product Development Launch",
+                roadmap_q1_text: "Blockchain protocol development, wallet creation, and trading platform architecture",
+                roadmap_q2_title: "Test Network Deployment",
+                roadmap_q2_text: "Public testing phase with community feedback and system optimization",
+                roadmap_q3_title: "Mainnet Launch",
+                roadmap_q3_text: "Official network launch enabling real transactions and user onboarding",
+                roadmap_q4_title: "Global Marketing Campaign",
+                roadmap_q4_text: "Strategic partnerships, social media campaigns, and community events",
+                roadmap_2025_title: "DeFi Ecosystem Expansion",
+                roadmap_2025_text: "DApp platform launch, lending protocols, insurance products, and derivatives trading",
+                team_title: "Core Team",
+                team_subtitle: "Industry veterans combining blockchain expertise with cultural vision.",
+                team_goddard_role: "Blockchain Pioneer",
+                team_goddard_text: "Internationally renowned data engineer, early blockchain technology pioneer with deep expertise in distributed systems.",
+                team_harvey_role: "Chief Architect",
+                team_harvey_text: "PhD from Yale University, expert in system architecture and database design. Former lead engineer at major exchanges.",
+                team_lambert_role: "Blockchain Application",
+                team_lambert_text: "Global blockchain application expert, US Business Council member with extensive enterprise blockchain deployment experience.",
+                team_meredith_role: "Engineering Lead",
+                team_meredith_text: "15 years of technical development experience, former engineering management roles at Google and Amazon.",
+                footer_disclaimer: "Disclaimer: This project is for informational purposes only. Participation in any token sale or investment activity involves risks. Please consult with professional advisors before making any financial decisions.",
+                footer_copyright: "Bridging ancient wisdom with modern technology."
+            },
+            zh: {
+                nav_mission: "使命",
+                nav_tokenomics: "代币经济",
+                nav_roadmap: "路线图",
+                nav_team: "团队",
+                hero_badge: "Web3 × 藏文化 × 元宇宙",
+                hero_title: "天堂之城",
+                hero_subtitle: "数字玛尼石生态系统，连接古老藏传智慧与现代区块链技术。构建一个灵性与去中心化金融相遇的元宇宙。",
+                hero_cta_primary: "探索生态系统",
+                hero_cta_secondary: "查看代币经济",
+                mission_title: "我们的使命",
+                mission_subtitle: "在开创数字灵性与金融未来的同时，保护神圣的传统。",
+                mission_card1_title: "文化传承",
+                mission_card1_text: "玛尼石传统代表了数百年的藏传佛教实践。每块石头承载着祈祷、经文和祝福。我们将这种神圣的艺术形式数字化，让全球社区能够接触，同时保留其精神本质。",
+                mission_card2_title: "去中心化金融",
+                mission_card2_text: "构建包含支付、投资、借贷和衍生品的完整金融生态系统。我们的DAO治理确保社区驱动的发展和透明的决策。",
+                mission_card3_title: "元宇宙整合",
+                mission_card3_text: "在数字领域创造香格里拉的沉浸式1:1映射。从虚拟寺庙到数字博物馆，在完全实现的元宇宙环境中体验藏族文化。",
+                tokenomics_title: "代币经济",
+                tokenomics_subtitle: "为可持续生态系统增长设计的透明分配方案。",
+                token_supply: "总供应量",
+                token_nft: "NFT收藏品",
+                token_price: "NFT地板价",
+                token_raise: "目标募资",
+                token_team: "团队 (30%)",
+                token_team_desc: "1-2年锁定期",
+                token_investors: "投资者 (50%)",
+                token_investors_desc: "ICO/IEO分配",
+                token_community: "社区 (20%)",
+                token_community_desc: "奖励与激励",
+                roadmap_title: "发展路线图",
+                roadmap_subtitle: "我们建设天堂之城生态系统的旅程。",
+                roadmap_q1_title: "产品开发启动",
+                roadmap_q1_text: "区块链协议开发、钱包创建和交易平台架构",
+                roadmap_q2_title: "测试网络部署",
+                roadmap_q2_text: "公开测试阶段，收集社区反馈并优化系统",
+                roadmap_q3_title: "主网上线",
+                roadmap_q3_text: "官方网络上线，支持真实交易和用户入驻",
+                roadmap_q4_title: "全球营销计划",
+                roadmap_q4_text: "战略合作伙伴关系、社交媒体营销和社区活动",
+                roadmap_2025_title: "DeFi生态系统扩展",
+                roadmap_2025_text: "DApp平台上线、借贷协议、保险产品和衍生品交易",
+                team_title: "核心团队",
+                team_subtitle: "将区块链专业知识与文化愿景相结合的行业资深人士。",
+                team_goddard_role: "区块链先驱",
+                team_goddard_text: "国际知名数据工程师，早期区块链技术先驱，在分布式系统方面拥有深厚专业知识。",
+                team_harvey_role: "首席架构师",
+                team_harvey_text: "耶鲁大学博士，系统架构和数据库设计专家。曾任主要交易所的首席工程师。",
+                team_lambert_role: "区块链应用",
+                team_lambert_text: "全球区块链应用专家，美国商业理事会成员，拥有丰富的企业区块链部署经验。",
+                team_meredith_role: "工程负责人",
+                team_meredith_text: "15年技术开发经验，曾在谷歌和亚马逊担任工程管理职位。",
+                footer_disclaimer: "免责声明：本项目仅供信息参考。参与任何代币销售或投资活动涉及风险。在做出任何财务决定前，请咨询专业顾问。",
+                footer_copyright: "连接古老智慧与现代技术。"
+            },
+            bo: {
+                nav_mission: "ལས་འཆང་།",
+                nav_tokenomics: "ཁུགས་རྩིས།",
+                nav_roadmap: "ལམ་ཐིག",
+                nav_team: "ཚོགས་པ།",
+                hero_badge: "Web3 × བོད་རིགས་རིག་གནས་ × སྣང་གྲོལ་འཇིག་རྟེན།",
+                hero_title: "གནས་མཆོག་གྲོང་ཁྱེར།",
+                hero_subtitle: "དཔལ་འབྱོར་བརྡ་འཕྲིན་མ་ལག་གིས་བསྐྱུད་པའི་གནའ་བོའི་བོད་ཀྱི་ཤེས་རབ་དང་དེང་རབས་མཐུན་སྦྱོར་བྱེད་པའི་ཨ་མ་ནི་སྟོན་གྱི་ཁོར་ཡུག་ཅིག",
+                hero_cta_primary: "ཁོར་ཡུག་འཚོལ་ཞིབ།",
+                hero_cta_secondary: "ཁུགས་རྩིས་ལ་ལྟ་བ།",
+                mission_title: "ང་ཚོའི་ལས་འཆང་།",
+                mission_subtitle: "དགོན་གཅེས་ཀྱི་ལུགས་སྲོལ་བཟུང་སྐྱོང་ཞིབ་ཚོལ་བྱེད་པ།",
+                mission_card1_title: "རིག་གནས་རྒྱུན་འཛིན།",
+                mission_card1_text: "ཨ་མ་ནི་རྡོ་སྟོན་གྱི་ལུགས་སྲོལ་ལོ་རྒྱུས་ཡུན་རིང་གི་བོད་བརྒྱུད་ནང་བསྟན་གྱི་ལག་ལེན་ལ་མིང་དུ་གྲགས།",
+                mission_card2_title: "དབུས་སྒྲིལ་དཔལ་འབྱོར།",
+                mission_card2_text: "སྤྲོད་པ། དངུལ་རྩིས། དངུལ་སྐྱེལ། ཕྱིར་ཚོང་བཅས་ཚང་མའི་དཔལ་འབྱོར་གྱི་ཁོར་ཡུག་ཅིག་བསྐྲུན་པ།",
+                mission_card3_title: "སྣང་གྲོལ་འཇིག་རྟེན་མཐུན་སྦྱོར།",
+                mission_card3_text: "ཤང་རྩེ་ལའི་ཡིད་འོང་གི་གནས་ཚུལ་ཞིག་དཔལ་འབྱོར་སྣང་གྲོལ་འཇིག་རྟེན་གྱི་ནང་དུ་བསྐྲུན་པ།",
+                tokenomics_title: "ཁུགས་རྩིས།",
+                tokenomics_subtitle: "དར་རྒྱས་ཡོང་བའི་ཁོར་ཡུག་གི་ཆེད་དུ་ཞིབ་ཚོལ་བྱས་པའི་གསལ་བཤད།",
+                token_supply: "མཁོ་སྒྲུབ་སྤྱིའི་ཚད།",
+                token_nft: "NFT བསྡུ་ཚོགས།",
+                token_price: "NFT རྩ་གོང་།",
+                token_raise: "མི་དམངས་ཤོག་སྒོར།",
+                token_team: "ཚོགས་པ (30%)",
+                token_team_desc: "ལོ་1-2ཡི་བཀག་སྡོམ།",
+                token_investors: "ཁེ་ལོབས་པ (50%)",
+                token_investors_desc: "ICO/IEO སྤྲོད་པ།",
+                token_community: "སྤྱི་ཚོགས (20%)",
+                token_community_desc: "བྱ་དགའ་དང་སྐུལ་སྦྱོར།",
+                roadmap_title: "ལམ་ཐིག",
+                roadmap_subtitle: "ང་ཚོས་གནས་མཆོག་གྲོང་ཁྱེར་གྱི་ཁོར་ཡུག་བསྐྲུན་པའི་ལམ་ཁ།",
+                roadmap_q1_title: "ཐོན་རྫས་གསར་གཏོད་འགོ་ཚུགས།",
+                roadmap_q1_text: "བརྡ་འཕྲིན་མ་ལག་གསར་གཏོད། སྒྲུབ་ཕྱགས་བསྐྲུན་པ། ཚོང་འབྲེལ་སྟེགས་བུའི་གཞི་རྩིས།",
+                roadmap_q2_title: "བརྟག་དཔྱད་དྲ་བ་སྒྲིག་པ།",
+                roadmap_q2_text: "སྤྱི་ཚོགས་ཀྱི་བསམ་འཆར་བསྡུ་ལེན་དང་རྒྱུད་ཆེན་ཕྱོགས་སྒྲིག",
+                roadmap_q3_title: "དྲ་གཞི་སྤྱི་ཚུགས།",
+                roadmap_q3_text: "དངོས་གཏམ་གྱི་ལས་དོན་དང་སྤྱོད་མཁན་ཞུགས་སྣོང་།",
+                roadmap_q4_title: "འཛམ་གླིང་སྐྱེལ་ཁ་བཀོད་པ།",
+                roadmap_q4_text: "གནད་འགག་གི་མཉམ་ལས། སྤྱི་ཚོགས་སྨྱན་སྦྱོར། སྤྱི་ཚོགས་བྱེད་སྒྲུབ།",
+                roadmap_2025_title: "DeFi ཁོར་ཡུག་རྒྱ་སྐྱེད།",
+                roadmap_2025_text: "DApp སྟེགས་བུ། དངུལ་སྐྱེལ་གཞི་རྩིས། བདག་སྐྱོང་ལས་ཀ། ཕྱིར་ཚོང་།",
+                team_title: "གཙོ་བོའི་ཚོགས་པ།",
+                team_subtitle: "བརྡ་འཕྲིན་མ་ལག་གི་ཆེད་མཁས་དང་རིག་གནས་མཐོང་ལམ་མཉམ་སྦྱོར་བྱེད་མཁན།",
+                team_goddard_role: "བརྡ་འཕྲིན་མ་ལག་གི་ཐོག་མཁས་མཁན།",
+                team_goddard_text: "རྒྱལ་སྤྱིའི་གྲགས་ཅན་གྱི་གཞི་གྲངས་ལག་རྩལ་པ།",
+                team_harvey_role: "གཙོ་གཞུང་འཆང་མཁན།",
+                team_harvey_text: "ཡེ་ཡེ་མཐོ་རིམ་སློབ་གླིང་གི་དཔལ་འབྱོར་རིག་པའི་མཐར་ཕྱིན་པ།",
+                team_lambert_role: "བརྡ་འཕྲིན་མ་ལག་ཉེར་སྤྱོད།",
+                team_lambert_text: "འཛམ་གླིང་བརྡ་འཕྲིན་མ་ལག་ཉེར་སྤྱོད་ཆེད་མཁས་པ།",
+                team_meredith_role: "ལག་རྩལ་འགན་འཁྲི།",
+                team_meredith_text: "ལོ་15གི་ལག་རྩལ་གསར་གཏོད་ཉམས་མྱོང་།",
+                footer_disclaimer: "གསལ་བཤད། ཚོང་རྫས་འདི་ཆ་འཕྲིན་ཙམ་དུ་ཟད། མ་དངུལ་གྱི་ཉེན་ཁ་ཡོད་པས་ཞིབ་བཤེར་མི་ཚུགས།",
+                footer_copyright: "གནའ་བོའི་ཤེས་རབ་དང་དེང་རབས་ལག་རྩལ་མཐུན་སྦྱོར།"
+            }
+        };
+
+        // Language switching functionality
+        let currentLang = 'en';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang === 'bo' ? 'bo' : lang;
+            
+            // Update all elements with data-i18n attribute
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (i18n[lang] && i18n[lang][key]) {
+                    element.textContent = i18n[lang][key];
+                }
+            });
+            
+            // Update button states
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.lang === lang);
+            });
+            
+            // Update hero title specially (keeps styling)
+            const heroTitle = document.querySelector('.hero h1');
+            if (heroTitle && i18n[lang].hero_title) {
+                const titleParts = i18n[lang].hero_title.split(' ');
+                if (lang === 'zh' || lang === 'bo') {
+                    heroTitle.innerHTML = i18n[lang].hero_title;
+                } else {
+                    heroTitle.innerHTML = `${titleParts[0]} <span>${titleParts.slice(1).join(' ')}</span>`;
+                }
+            }
+        }
+
+        // Event listeners for language buttons
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
+        });
+
+        // Auto-detect browser language
+        const browserLang = navigator.language || navigator.userLanguage;
+        if (browserLang.startsWith('zh')) {
+            setLanguage('zh');
+        } else if (browserLang.startsWith('bo')) {
+            setLanguage('bo');
+        }
+    </script>
+</body>
+</html>
