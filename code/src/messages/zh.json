@@ -1,0 +1,186 @@
+{
+  "common": {
+    "siteName": "香格里拉天堂之城",
+    "siteNameEn": "Paradise City",
+    "siteNameTibetan": "གནས་མཆོག་གྲོང་ཁྱེར།",
+    "slogan": "通往内心宁静之门",
+    "sloganEn": "Your Portal to Inner Peace",
+    "language": "语言",
+    "selectLanguage": "选择语言",
+    "chinese": "中文",
+    "english": "English",
+    "tibetan": "藏文",
+    "learnMore": "了解更多",
+    "bookNow": "立即预约",
+    "viewAll": "查看全部",
+    "loading": "加载中...",
+    "error": "出错了",
+    "success": "成功"
+  },
+  "navigation": {
+    "home": "首页",
+    "about": "关于我们",
+    "temples": "寺庙之旅",
+    "healing": "身心疗愈",
+    "accommodation": "住宿体验",
+    "culture": "文化体验",
+    "digital": "数字体验",
+    "nft": "NFT护法",
+    "token": "$SHANGRI",
+    "news": "动态资讯",
+    "contact": "联系我们"
+  },
+  "hero": {
+    "title": "以药师愿力，转娑婆为净土",
+    "subtitle": "在香格里拉的圣境中，体验千年藏医药智慧与现代科技的完美融合",
+    "cta": "开始您的朝圣之旅",
+    "secondaryCta": "探索数字世界"
+  },
+  "about": {
+    "title": "关于我们",
+    "subtitle": "香格里拉天堂之城",
+    "description": "以药师琉璃光七佛愿力为根基，融合藏医药智慧与现代科技，打造数字时代可触及的人间净土。",
+    "features": {
+      "culture": {
+        "title": "千年文化传承",
+        "description": "14座活佛庙宇，承载着千年藏传佛教文化与洛嘎活佛藏医药智慧的传承。"
+      },
+      "nature": {
+        "title": "自然疗愈圣地",
+        "description": "在香格里拉的雪山、草原与湖泊之间，感受天地间的灵气与宁静。"
+      },
+      "digital": {
+        "title": "数字创新体验",
+        "description": "通过NFT、元宇宙与区块链技术，让古老智慧在数字时代焕发新生。"
+      }
+    }
+  },
+  "healing": {
+    "title": "身心疗愈",
+    "subtitle": "以药师愿力，转娑婆为净土",
+    "description": "融合藏医药智慧与现代疗愈技术，为您提供全方位的身心灵疗愈体验。",
+    "methods": {
+      "color": {
+        "title": "色法-大食法",
+        "subtitle": "身体疗愈",
+        "description": "通过藏医药食疗、药膳调理与身体疗愈，净化身体，恢复活力。",
+        "benefits": ["藏医药食疗", "药膳调理", "身体按摩", "草药浴疗"]
+      },
+      "breath": {
+        "title": "息法-安般法",
+        "subtitle": "呼吸疗愈",
+        "description": "通过呼吸冥想与高原氧疗，调息养气，安定心神。",
+        "benefits": ["呼吸冥想", "高原氧疗", "瑜伽练习", "太极养生"]
+      },
+      "mind": {
+        "title": "心法-入寤法",
+        "subtitle": "心灵疗愈",
+        "description": "通过梦境修行与心灵课程，净化心灵，觉醒智慧。",
+        "benefits": ["梦境修行", "禅修静心", "心灵课程", "祈福法会"]
+      }
+    },
+    "cta": "预约疗愈体验"
+  },
+  "sevenBuddhas": {
+    "title": "药师七佛",
+    "subtitle": "七佛愿力，疗愈众生",
+    "buddhas": {
+      "buddha1": {
+        "name": "善名称吉祥王如来",
+        "wish": "消除业障",
+        "healing": "业障净化冥想"
+      },
+      "buddha2": {
+        "name": "宝月智严光音自在王如来",
+        "wish": "智慧光明",
+        "healing": "智慧课程"
+      },
+      "buddha3": {
+        "name": "金色宝光妙行成就如来",
+        "wish": "福慧圆满",
+        "healing": "祈福法会"
+      },
+      "buddha4": {
+        "name": "无忧最胜吉祥如来",
+        "wish": "离苦得乐",
+        "healing": "心理咨询"
+      },
+      "buddha5": {
+        "name": "法海雷音如来",
+        "wish": "法音宣流",
+        "healing": "梵呗音乐"
+      },
+      "buddha6": {
+        "name": "法海胜慧游戏神通如来",
+        "wish": "神通自在",
+        "healing": "瑜伽课程"
+      },
+      "buddha7": {
+        "name": "药师琉璃光如来",
+        "wish": "疗愈众生",
+        "healing": "藏医药整体疗愈"
+      }
+    }
+  },
+  "digital": {
+    "title": "数字体验",
+    "subtitle": "古老智慧，数字新生",
+    "nft": {
+      "title": "NFT数字护法",
+      "description": "十二药叉守护令，共84,000个数字护法，每一位都是您修行路上的守护者。",
+      "cta": "探索NFT系列"
+    },
+    "metaverse": {
+      "title": "元宇宙修行",
+      "description": "在七层虚拟世界中，体验药师七佛愿力的数字呈现。",
+      "cta": "进入元宇宙"
+    },
+    "token": {
+      "title": "$SHANGRI代币",
+      "description": "参与香格里拉生态建设，共享数字红利。",
+      "cta": "了解代币经济"
+    }
+  },
+  "temples": {
+    "title": "寺庙之旅",
+    "subtitle": "朝圣之路，心灵之旅",
+    "description": "14座活佛庙宇，每座都承载着独特的文化与历史，等待您的探索。",
+    "cta": "查看朝圣路线"
+  },
+  "accommodation": {
+    "title": "住宿体验",
+    "subtitle": "在圣境中安歇",
+    "description": "体验香格里拉的传统民宿与现代舒适相结合的住宿环境。",
+    "rooms": {
+      "standard": "标准客房",
+      "deluxe": "豪华套房",
+      "vip": "VIP禅修房"
+    },
+    "cta": "预订住宿"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "与我们取得联系",
+    "form": {
+      "name": "姓名",
+      "email": "邮箱",
+      "phone": "电话",
+      "message": "留言",
+      "submit": "提交"
+    },
+    "info": {
+      "address": "中国云南省迪庆藏族自治州香格里拉市",
+      "email": "contact@shangri-la-city.com",
+      "phone": "+86 887 8888 8888"
+    }
+  },
+  "footer": {
+    "description": "以药师愿力，转娑婆为净土",
+    "links": {
+      "privacy": "隐私政策",
+      "terms": "服务条款",
+      "sitemap": "网站地图"
+    },
+    "copyright": "© 2026 香格里拉天堂之城 Paradise City. All rights reserved."
+  }
+}

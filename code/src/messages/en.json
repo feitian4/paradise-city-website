@@ -1,0 +1,186 @@
+{
+  "common": {
+    "siteName": "Paradise City",
+    "siteNameEn": "Paradise City",
+    "siteNameTibetan": "གནས་མཆོག་གྲོང་ཁྱེར།",
+    "slogan": "Your Portal to Inner Peace",
+    "sloganEn": "Your Portal to Inner Peace",
+    "language": "Language",
+    "selectLanguage": "Select Language",
+    "chinese": "中文",
+    "english": "English",
+    "tibetan": "Tibetan",
+    "learnMore": "Learn More",
+    "bookNow": "Book Now",
+    "viewAll": "View All",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "temples": "Temple Tours",
+    "healing": "Healing",
+    "accommodation": "Accommodation",
+    "culture": "Culture",
+    "digital": "Digital",
+    "nft": "NFT Guardians",
+    "token": "$SHANGRI",
+    "news": "News",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Transform Suffering into Pure Land through Medicine Buddha's Vows",
+    "subtitle": "Experience the perfect fusion of ancient Tibetan medicine wisdom and modern technology in the sacred land of Shangri-La",
+    "cta": "Begin Your Pilgrimage",
+    "secondaryCta": "Explore Digital World"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Paradise City Shangri-La",
+    "description": "Rooted in the vows of the Seven Medicine Buddhas, we blend Tibetan medicine wisdom with modern technology to create a reachable pure land in the digital age.",
+    "features": {
+      "culture": {
+        "title": "Millennial Heritage",
+        "description": "14 Living Buddha temples carry the legacy of thousand-year Tibetan Buddhist culture and Master Loga's Tibetan medicine wisdom."
+      },
+      "nature": {
+        "title": "Natural Healing Sanctuary",
+        "description": "Between the snow mountains, grasslands and lakes of Shangri-La, feel the spiritual energy and tranquility of heaven and earth."
+      },
+      "digital": {
+        "title": "Digital Innovation",
+        "description": "Through NFT, metaverse and blockchain technology, ancient wisdom is reborn in the digital age."
+      }
+    }
+  },
+  "healing": {
+    "title": "Mind-Body Healing",
+    "subtitle": "Transform Suffering into Pure Land through Medicine Buddha's Vows",
+    "description": "Blending Tibetan medicine wisdom with modern healing techniques to provide comprehensive mind-body-spirit healing experiences.",
+    "methods": {
+      "color": {
+        "title": "Color Method - Nourishment",
+        "subtitle": "Body Healing",
+        "description": "Through Tibetan medicine diet therapy, medicinal food and body healing, purify the body and restore vitality.",
+        "benefits": ["Tibetan Diet Therapy", "Medicinal Food", "Body Massage", "Herbal Bath"]
+      },
+      "breath": {
+        "title": "Breath Method - Anapana",
+        "subtitle": "Breath Healing",
+        "description": "Through breathing meditation and highland oxygen therapy, regulate breath and calm the mind.",
+        "benefits": ["Breathing Meditation", "Highland Oxygen Therapy", "Yoga Practice", "Tai Chi"]
+      },
+      "mind": {
+        "title": "Mind Method - Dream Practice",
+        "subtitle": "Spiritual Healing",
+        "description": "Through dream practice and spiritual courses, purify the mind and awaken wisdom.",
+        "benefits": ["Dream Practice", "Zen Meditation", "Spiritual Courses", "Blessing Ceremonies"]
+      }
+    },
+    "cta": "Book Healing Experience"
+  },
+  "sevenBuddhas": {
+    "title": "Seven Medicine Buddhas",
+    "subtitle": "Seven Buddha Vows, Healing All Beings",
+    "buddhas": {
+      "buddha1": {
+        "name": "Supreme Auspicious Buddha of Good Name",
+        "wish": "Eliminate Karma",
+        "healing": "Karma Purification Meditation"
+      },
+      "buddha2": {
+        "name": "Moon of Wisdom Buddha",
+        "wish": "Wisdom Light",
+        "healing": "Wisdom Courses"
+      },
+      "buddha3": {
+        "name": "Golden Light Buddha",
+        "wish": "Merits and Wisdom",
+        "healing": "Blessing Ceremonies"
+      },
+      "buddha4": {
+        "name": "Worry-Free Supreme Buddha",
+        "wish": "Freedom from Suffering",
+        "healing": "Psychological Counseling"
+      },
+      "buddha5": {
+        "name": "Dharma Sea Thunder Buddha",
+        "wish": "Dharma Voice",
+        "healing": "Sacred Music"
+      },
+      "buddha6": {
+        "name": "Dharma Wisdom Buddha",
+        "wish": "Spiritual Freedom",
+        "healing": "Yoga Courses"
+      },
+      "buddha7": {
+        "name": "Medicine Buddha",
+        "wish": "Heal All Beings",
+        "healing": "Tibetan Medicine Holistic Healing"
+      }
+    }
+  },
+  "digital": {
+    "title": "Digital Experience",
+    "subtitle": "Ancient Wisdom, Digital Rebirth",
+    "nft": {
+      "title": "NFT Digital Protectors",
+      "description": "Twelve Yaksha Guardian Tokens, 84,000 digital protectors, each one a guardian on your spiritual journey.",
+      "cta": "Explore NFT Collection"
+    },
+    "metaverse": {
+      "title": "Metaverse Practice",
+      "description": "Experience the digital manifestation of the Seven Medicine Buddha vows in seven virtual worlds.",
+      "cta": "Enter Metaverse"
+    },
+    "token": {
+      "title": "$SHANGRI Token",
+      "description": "Participate in Shangri-La ecosystem and share digital dividends.",
+      "cta": "Learn Tokenomics"
+    }
+  },
+  "temples": {
+    "title": "Temple Tours",
+    "subtitle": "Pilgrimage Path, Spiritual Journey",
+    "description": "14 Living Buddha temples, each carrying unique culture and history, awaiting your exploration.",
+    "cta": "View Pilgrimage Routes"
+  },
+  "accommodation": {
+    "title": "Accommodation",
+    "subtitle": "Rest in Sacred Land",
+    "description": "Experience accommodation that combines Shangri-La's traditional lodging with modern comfort.",
+    "rooms": {
+      "standard": "Standard Room",
+      "deluxe": "Deluxe Suite",
+      "vip": "VIP Meditation Room"
+    },
+    "cta": "Book Accommodation"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in Touch",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Submit"
+    },
+    "info": {
+      "address": "Shangri-La City, Diqing Tibetan Autonomous Prefecture, Yunnan, China",
+      "email": "contact@shangri-la-city.com",
+      "phone": "+86 887 8888 8888"
+    }
+  },
+  "footer": {
+    "description": "Transform Suffering into Pure Land through Medicine Buddha's Vows",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "sitemap": "Sitemap"
+    },
+    "copyright": "© 2026 Paradise City Shangri-La. All rights reserved."
+  }
+}
