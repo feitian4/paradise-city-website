@@ -7,7 +7,7 @@ describe('ShangrToken', function () {
   beforeEach(async () => {
     [owner, team, investor, community] = await ethers.getSigners();
     const Token = await ethers.getContractFactory('ShangrToken');
-    token = await Token.deploy(owner.address);
+    token = await Token.deploy();
     await token.waitForDeployment();
   });
 
