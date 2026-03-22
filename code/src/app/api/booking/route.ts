@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { bookingDb } from '@/lib/db';
 
 export interface BookingRequest {
   name: string;
@@ -17,9 +18,6 @@ export interface BookingResponse {
   message: string;
 }
 
-// 简单内存存储（生产环境替换为数据库）
-const bookings: Array<BookingRequest & { id: string; createdAt: string; status: string }> = [];
-
 export async function POST(req: NextRequest): Promise<NextResponse<BookingResponse>> {
   try {
     const body: BookingRequest = await req.json();
@@ -32,7 +30,6 @@ export async function POST(req: NextRequest): Promise<NextResponse<BookingRespon
       );
     }
 
-    // 邮箱格式校验
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(body.email)) {
       return NextResponse.json(
@@ -41,27 +38,39 @@ export async function POST(req: NextRequest): Promise<NextResponse<BookingRespon
       );
     }
 
+    // 日期不能早于今天
+    if (new Date(body.date) < new Date(new Date().toDateString())) {
+      return NextResponse.json(
+        { success: false, message: '预约日期不能早于今天' },
+        { status: 400 }
+      );
+    }
+
     // 生成预约 ID
     const bookingId = `PC-${Date.now()}-${Math.random().toString(36).slice(2, 7).toUpperCase()}`;
 
-    const booking = {
-      ...body,
+    // 写入数据库
+    bookingDb.create({
       id: bookingId,
-      createdAt: new Date().toISOString(),
-      status: 'pending',
-    };
+      name: body.name,
+      email: body.email,
+      phone: body.phone,
+      service: body.service,
+      date: body.date,
+      people: body.people || 1,
+      message: body.message,
+      walletAddress: body.walletAddress,
+    });
 
-    bookings.push(booking);
-
-    console.log('新预约：', booking);
+    console.log(`[预约] ${bookingId} - ${body.name} - ${body.service} - ${body.date}`);
 
     return NextResponse.json({
       success: true,
       bookingId,
-      message: `预约成功！您的预约编号为 ${bookingId}，我们将在24小时内与您联系确认。`,
+      message: `预约成功！编号 ${bookingId}，我们将在24小时内联系您确认。`,
     });
   } catch (error) {
-    console.error('预约处理错误：', error);
+    console.error('[预约错误]', error);
     return NextResponse.json(
       { success: false, message: '服务器错误，请稍后重试' },
       { status: 500 }
@@ -70,9 +79,10 @@ export async function POST(req: NextRequest): Promise<NextResponse<BookingRespon
 }
 
 export async function GET(): Promise<NextResponse> {
-  // 返回预约统计（生产环境需要鉴权）
-  return NextResponse.json({
-    total: bookings.length,
-    pending: bookings.filter(b => b.status === 'pending').length,
-  });
+  try {
+    const stats = bookingDb.stats();
+    return NextResponse.json(stats);
+  } catch (error) {
+    return NextResponse.json({ error: 'Database error' }, { status: 500 });
+  }
 }
