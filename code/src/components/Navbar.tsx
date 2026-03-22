@@ -27,6 +27,8 @@ export default function Navbar() {
     { href: '#temples', label: t('navigation.temples') },
     { href: `/${locale}/nft`, label: t('navigation.nft') },
     { href: `/${locale}/token`, label: t('navigation.token') },
+    { href: `/${locale}/metaverse`, label: t('navigation.metaverse') },
+    { href: `/${locale}/booking`, label: t('navigation.booking') },
     { href: '#contact', label: t('navigation.contact') },
   ];
 
