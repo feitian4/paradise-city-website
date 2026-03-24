@@ -3,12 +3,6 @@
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
   "installCommand": "npm install",
-  "env": {
-    "NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID": "@walletconnect_project_id",
-    "NEXT_PUBLIC_NFT_CONTRACT_ADDRESS": "@nft_contract_address",
-    "NEXT_PUBLIC_TOKEN_CONTRACT_ADDRESS": "@token_contract_address",
-    "NEXT_PUBLIC_API_URL": "@api_url"
-  },
   "headers": [
     {
       "source": "/(.*)",
