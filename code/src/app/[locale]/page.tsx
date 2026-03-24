@@ -508,6 +508,39 @@ export default function HomePage() {
                     <p className="text-gray-400">{t('contact.info.phone')}</p>
                   </div>
                 </div>
+
+                {/* Team Contacts */}
+                <div className="pt-4 border-t border-gray-700">
+                  <h4 className="text-white font-semibold mb-4">联系团队</h4>
+                  <div className="space-y-4">
+                    {(t.raw('contact.team') as any[]).map((member: any, i: number) => (
+                      <div key={i} className="bg-dark-700 rounded-xl p-4 space-y-2">
+                        <div className="flex items-center justify-between">
+                          <span className="text-gold-400 font-semibold">{member.name}</span>
+                          <span className="text-gray-500 text-sm">{member.location}</span>
+                        </div>
+                        <div className="grid grid-cols-1 gap-1 text-sm">
+                          <div className="flex items-center space-x-2 text-gray-400">
+                            <span className="text-green-400">WhatsApp:</span>
+                            <a href={`https://wa.me/${member.whatsapp.replace(/[^0-9]/g,'')}`} className="hover:text-gold-400 transition-colors">{member.whatsapp}</a>
+                          </div>
+                          <div className="flex items-center space-x-2 text-gray-400">
+                            <span className="text-blue-400">WeChat:</span>
+                            <span>{member.wechat}</span>
+                          </div>
+                          <div className="flex items-center space-x-2 text-gray-400">
+                            <span className="text-gray-300">Tel:</span>
+                            <a href={`tel:${member.tel}`} className="hover:text-gold-400 transition-colors">{member.tel}</a>
+                          </div>
+                          <div className="flex items-center space-x-2 text-gray-400">
+                            <span className="text-gray-300">Email:</span>
+                            <a href={`mailto:${member.email}`} className="hover:text-gold-400 transition-colors">{member.email}</a>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
             </motion.div>
           </div>

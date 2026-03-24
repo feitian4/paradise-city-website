@@ -174,7 +174,25 @@
       "address": "中国云南省迪庆藏族自治州香格里拉市",
       "email": "contact@shangri-la-city.com",
       "phone": "+86 887 8888 8888"
-    }
+    },
+    "team": [
+      {
+        "name": "朱先生 Mr. Zhu",
+        "location": "北京，中国",
+        "whatsapp": "+94 778 511 581",
+        "wechat": "+86 139 1071 3491",
+        "tel": "+94 778 511 581",
+        "email": "Hongwei@zxmy.info"
+      },
+      {
+        "name": "刘女士 Ms. Liu",
+        "location": "北京，中国",
+        "whatsapp": "+49 1514 287 3952",
+        "wechat": "+86 186 1011 5947",
+        "tel": "+94 777 631 144",
+        "email": "Yilan@zxmy.info"
+      }
+    ]
   },
   "footer": {
     "description": "以药师愿力，转娑婆为净土",
