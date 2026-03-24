@@ -481,36 +481,8 @@ export default function HomePage() {
               transition={{ duration: 0.6 }}
             >
               <div className="space-y-8">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-gold-500/10 p-3 rounded-lg">
-                    <MapIcon className="w-6 h-6 text-gold-500" />
-                  </div>
-                  <div>
-                    <h4 className="text-white font-semibold mb-1">地址</h4>
-                    <p className="text-gray-400">{t('contact.info.address')}</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="bg-gold-500/10 p-3 rounded-lg">
-                    <HeartIcon className="w-6 h-6 text-gold-500" />
-                  </div>
-                  <div>
-                    <h4 className="text-white font-semibold mb-1">邮箱</h4>
-                    <p className="text-gray-400">{t('contact.info.email')}</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="bg-gold-500/10 p-3 rounded-lg">
-                    <HomeIcon className="w-6 h-6 text-gold-500" />
-                  </div>
-                  <div>
-                    <h4 className="text-white font-semibold mb-1">电话</h4>
-                    <p className="text-gray-400">{t('contact.info.phone')}</p>
-                  </div>
-                </div>
-
                 {/* Team Contacts */}
-                <div className="pt-4 border-t border-gray-700">
+                <div className="pt-4">
                   <h4 className="text-white font-semibold mb-4">联系团队</h4>
                   <div className="space-y-4">
                     {(t.raw('contact.team') as any[]).map((member: any, i: number) => (
