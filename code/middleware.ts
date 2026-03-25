@@ -4,5 +4,6 @@ import {routing} from './src/routing';
 export default createMiddleware(routing);
 
 export const config = {
-  matcher: ['/', '/(zh|en|bo)/:path*']
+  // Match all pathnames except for static files
+  matcher: ['/((?!_next/static|_next/image|favicon.ico|.*\\..*).*)'] 
 };
