@@ -186,28 +186,10 @@
       "submit": "提交"
     },
     "info": {
+      "address": "云南省迪庆藏族自治州香格里拉市",
       "email": "Hongwei@zxmy.info",
-      "phone": "+86 13292199929",
-      "address": "云南省迪庆藏族自治州香格里拉市"
-    },
-    "team": [
-      {
-        "name": "朱先生 Mr. Zhu",
-        "location": "北京，中国",
-        "whatsapp": "+94 778 511 581",
-        "wechat": "+86 139 1071 3491",
-        "tel": "+94 778 511 581",
-        "email": "Hongwei@zxmy.info"
-      },
-      {
-        "name": "刘女士 Ms. Liu",
-        "location": "北京，中国",
-        "whatsapp": "+49 1514 287 3952",
-        "wechat": "+86 186 1011 5947",
-        "tel": "+94 777 631 144",
-        "email": "Yilan@zxmy.info"
-      }
-    ]
+      "phone": "+86 13292199929"
+    }
   },
   "footer": {
     "description": "以药师愿力，转娑婆为净土",
