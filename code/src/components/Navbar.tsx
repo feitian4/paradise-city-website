@@ -9,8 +9,8 @@ import WalletButton from '@/components/WalletButton';
 
 const languages = [
   { code: 'zh', label: '中文', flag: '🇨🇳' },
-  { code: 'en', label: 'English', flag: '🌐' },
-  { code: 'bo', label: 'བོད་སྐད།', flag: '��️' },
+  { code: 'en', label: 'English', flag: '🇬🇧' },
+  { code: 'bo', label: 'བོདསྐད', flag: '🏴' },
 ];
 
 export default function Navbar() {

@@ -1,0 +1,205 @@
+﻿{
+  "common": {
+    "siteName": "棣欐牸閲屾媺澶╁爞涔嬪煄",
+    "siteNameEn": "Paradise City",
+    "siteNameTibetan": "嘟傕綋嘟︵紜嘟樴絾嘟监絺嗉嬥絺嗑侧郊嘟勦紜嘟佮颈嘟亨舰嗉?,
+    "slogan": "閫氬線鍐呭績瀹侀潤涔嬮棬",
+    "sloganEn": "Your Portal to Inner Peace",
+    "language": "璇█",
+    "selectLanguage": "閫夋嫨璇█",
+    "chinese": "涓枃",
+    "english": "English",
+    "tibetan": "钘忔枃",
+    "learnMore": "浜嗚В鏇村",
+    "bookNow": "绔嬪嵆棰勭害",
+    "viewAll": "鏌ョ湅鍏ㄩ儴",
+    "loading": "鍔犺浇涓?..",
+    "error": "鍑洪敊浜?,
+    "success": "鎴愬姛"
+  },
+  "navigation": {
+    "home": "棣栭〉",
+    "about": "鍏充簬鎴戜滑",
+    "temples": "瀵哄簷涔嬫梾",
+    "healing": "韬績鐤楁剤",
+    "accommodation": "浣忓浣撻獙",
+    "culture": "鏂囧寲浣撻獙",
+    "digital": "鏁板瓧浣撻獙",
+    "nft": "NFT鎶ゆ硶",
+    "token": "$SHANGRI",
+    "metaverse": "鍏冨畤瀹?,
+    "booking": "绔嬪嵆棰勭害",
+    "news": "鍔ㄦ€佽祫璁?,
+    "contact": "鑱旂郴鎴戜滑"
+  },
+  "hero": {
+    "title": "浠ヨ嵂甯堟効鍔涳紝杞☉濠嗕负鍑€鍦?,
+    "subtitle": "鍦ㄩ鏍奸噷鎷夌殑鍦ｅ涓紝浣撻獙鍗冨勾钘忓尰鑽櫤鎱т笌鐜颁唬绉戞妧鐨勫畬缇庤瀺鍚?,
+    "cta": "寮€濮嬫偍鐨勬湞鍦ｄ箣鏃?,
+    "secondaryCta": "鎺㈢储鏁板瓧涓栫晫"
+  },
+  "about": {
+    "title": "鍏充簬鎴戜滑",
+    "subtitle": "棣欐牸閲屾媺澶╁爞涔嬪煄",
+    "description": "浠ヨ嵂甯堢悏鐠冨厜涓冧經鎰垮姏涓烘牴鍩猴紝铻嶅悎钘忓尰鑽櫤鎱т笌鐜颁唬绉戞妧锛屾墦閫犳暟瀛楁椂浠ｅ彲瑙﹀強鐨勪汉闂村噣鍦熴€?,
+    "features": {
+      "culture": {
+        "title": "鍗冨勾鏂囧寲浼犳壙",
+        "description": "14搴ф椿浣涘簷瀹囷紝鎵胯浇鐫€鍗冨勾钘忎紶浣涙暀鏂囧寲涓庢礇鍢庢椿浣涜棌鍖昏嵂鏅烘収鐨勪紶鎵裤€?
+      },
+      "nature": {
+        "title": "鑷劧鐤楁剤鍦ｅ湴",
+        "description": "鍦ㄩ鏍奸噷鎷夌殑闆北銆佽崏鍘熶笌婀栨硦涔嬮棿锛屾劅鍙楀ぉ鍦伴棿鐨勭伒姘斾笌瀹侀潤銆?
+      },
+      "digital": {
+        "title": "鏁板瓧鍒涙柊浣撻獙",
+        "description": "閫氳繃NFT銆佸厓瀹囧畽涓庡尯鍧楅摼鎶€鏈紝璁╁彜鑰佹櫤鎱у湪鏁板瓧鏃朵唬鐒曞彂鏂扮敓銆?
+      }
+    }
+  },
+  "healing": {
+    "title": "韬績鐤楁剤",
+    "subtitle": "浠ヨ嵂甯堟効鍔涳紝杞☉濠嗕负鍑€鍦?,
+    "description": "铻嶅悎钘忓尰鑽櫤鎱т笌鐜颁唬鐤楁剤鎶€鏈紝涓烘偍鎻愪緵鍏ㄦ柟浣嶇殑韬績鐏电枟鎰堜綋楠屻€?,
+    "methods": {
+      "color": {
+        "title": "鑹叉硶-澶ч娉?,
+        "subtitle": "韬綋鐤楁剤",
+        "description": "閫氳繃钘忓尰鑽鐤椼€佽嵂鑶宠皟鐞嗕笌韬綋鐤楁剤锛屽噣鍖栬韩浣擄紝鎭㈠娲诲姏銆?,
+        "benefits": ["钘忓尰鑽鐤?, "鑽喅璋冪悊", "韬綋鎸夋懇", "鑽夎嵂娴寸枟"]
+      },
+      "breath": {
+        "title": "鎭硶-瀹夎埇娉?,
+        "subtitle": "鍛煎惛鐤楁剤",
+        "description": "閫氳繃鍛煎惛鍐ユ兂涓庨珮鍘熸哀鐤楋紝璋冩伅鍏绘皵锛屽畨瀹氬績绁炪€?,
+        "benefits": ["鍛煎惛鍐ユ兂", "楂樺師姘х枟", "鐟滀冀缁冧範", "澶瀬鍏荤敓"]
+      },
+      "mind": {
+        "title": "蹇冩硶-鍏ュ娉?,
+        "subtitle": "蹇冪伒鐤楁剤",
+        "description": "閫氳繃姊﹀淇涓庡績鐏佃绋嬶紝鍑€鍖栧績鐏碉紝瑙夐啋鏅烘収銆?,
+        "benefits": ["姊﹀淇", "绂呬慨闈欏績", "蹇冪伒璇剧▼", "绁堢娉曚細"]
+      }
+    },
+    "cta": "棰勭害鐤楁剤浣撻獙"
+  },
+  "sevenBuddhas": {
+    "title": "鑽笀涓冧經",
+    "subtitle": "涓冧經鎰垮姏锛岀枟鎰堜紬鐢?,
+    "buddhas": {
+      "buddha1": {
+        "name": "鍠勫悕绉板悏绁ョ帇濡傛潵",
+        "wish": "娑堥櫎涓氶殰",
+        "healing": "涓氶殰鍑€鍖栧啣鎯?
+      },
+      "buddha2": {
+        "name": "瀹濇湀鏅轰弗鍏夐煶鑷湪鐜嬪鏉?,
+        "wish": "鏅烘収鍏夋槑",
+        "healing": "鏅烘収璇剧▼"
+      },
+      "buddha3": {
+        "name": "閲戣壊瀹濆厜濡欒鎴愬氨濡傛潵",
+        "wish": "绂忔収鍦嗘弧",
+        "healing": "绁堢娉曚細"
+      },
+      "buddha4": {
+        "name": "鏃犲咖鏈€鑳滃悏绁ュ鏉?,
+        "wish": "绂昏嫤寰椾箰",
+        "healing": "蹇冪悊鍜ㄨ"
+      },
+      "buddha5": {
+        "name": "娉曟捣闆烽煶濡傛潵",
+        "wish": "娉曢煶瀹ｆ祦",
+        "healing": "姊靛憲闊充箰"
+      },
+      "buddha6": {
+        "name": "娉曟捣鑳滄収娓告垙绁為€氬鏉?,
+        "wish": "绁為€氳嚜鍦?,
+        "healing": "鐟滀冀璇剧▼"
+      },
+      "buddha7": {
+        "name": "鑽笀鐞夌拑鍏夊鏉?,
+        "wish": "鐤楁剤浼楃敓",
+        "healing": "钘忓尰鑽暣浣撶枟鎰?
+      }
+    }
+  },
+  "digital": {
+    "title": "鏁板瓧浣撻獙",
+    "subtitle": "鍙よ€佹櫤鎱э紝鏁板瓧鏂扮敓",
+    "nft": {
+      "title": "NFT鏁板瓧鎶ゆ硶",
+      "description": "鍗佷簩鑽弶瀹堟姢浠わ紝鍏?4,000涓暟瀛楁姢娉曪紝姣忎竴浣嶉兘鏄偍淇璺笂鐨勫畧鎶よ€呫€?,
+      "cta": "鎺㈢储NFT绯诲垪"
+    },
+    "metaverse": {
+      "title": "鍏冨畤瀹欎慨琛?,
+      "description": "鍦ㄤ竷灞傝櫄鎷熶笘鐣屼腑锛屼綋楠岃嵂甯堜竷浣涙効鍔涚殑鏁板瓧鍛堢幇銆?,
+      "cta": "杩涘叆鍏冨畤瀹?
+    },
+    "token": {
+      "title": "$SHANGRI浠ｅ竵",
+      "description": "鍙備笌棣欐牸閲屾媺鐢熸€佸缓璁撅紝鍏变韩鏁板瓧绾㈠埄銆?,
+      "cta": "浜嗚В浠ｅ竵缁忔祹"
+    }
+  },
+  "temples": {
+    "title": "瀵哄簷涔嬫梾",
+    "subtitle": "鏈濆湥涔嬭矾锛屽績鐏典箣鏃?,
+    "description": "14搴ф椿浣涘簷瀹囷紝姣忓骇閮芥壙杞界潃鐙壒鐨勬枃鍖栦笌鍘嗗彶锛岀瓑寰呮偍鐨勬帰绱€?,
+    "cta": "鏌ョ湅鏈濆湥璺嚎"
+  },
+  "accommodation": {
+    "title": "浣忓浣撻獙",
+    "subtitle": "鍦ㄥ湥澧冧腑瀹夋瓏",
+    "description": "浣撻獙棣欐牸閲屾媺鐨勪紶缁熸皯瀹夸笌鐜颁唬鑸掗€傜浉缁撳悎鐨勪綇瀹跨幆澧冦€?,
+    "rooms": {
+      "standard": "鏍囧噯瀹㈡埧",
+      "deluxe": "璞崕濂楁埧",
+      "vip": "VIP绂呬慨鎴?
+    },
+    "cta": "棰勮浣忓"
+  },
+  "contact": {
+    "title": "鑱旂郴鎴戜滑",
+    "subtitle": "涓庢垜浠彇寰楄仈绯?,
+    "form": {
+      "name": "濮撳悕",
+      "email": "閭",
+      "phone": "鐢佃瘽",
+      "message": "鐣欒█",
+      "submit": "鎻愪氦"
+    },
+    "info": {
+      "email": "Hongwei@zxmy.info",
+      "phone": "+86 13292199929"
+    },
+    "team": [
+      {
+        "name": "鏈卞厛鐢?Mr. Zhu",
+        "location": "鍖椾含锛屼腑鍥?,
+        "whatsapp": "+94 778 511 581",
+        "wechat": "+86 139 1071 3491",
+        "tel": "+94 778 511 581",
+        "email": "Hongwei@zxmy.info"
+      },
+      {
+        "name": "鍒樺コ澹?Ms. Liu",
+        "location": "鍖椾含锛屼腑鍥?,
+        "whatsapp": "+49 1514 287 3952",
+        "wechat": "+86 186 1011 5947",
+        "tel": "+94 777 631 144",
+        "email": "Yilan@zxmy.info"
+      }
+    ]
+  },
+  "footer": {
+    "description": "浠ヨ嵂甯堟効鍔涳紝杞☉濠嗕负鍑€鍦?,
+    "links": {
+      "privacy": "闅愮鏀跨瓥",
+      "terms": "鏈嶅姟鏉℃",
+      "sitemap": "缃戠珯鍦板浘"
+    },
+    "copyright": "漏 2026 棣欐牸閲屾媺澶╁爞涔嬪煄 Paradise City. All rights reserved."
+  }
+}
