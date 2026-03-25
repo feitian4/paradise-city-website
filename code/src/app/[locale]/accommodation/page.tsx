@@ -10,8 +10,6 @@ const rooms = [
   {
     type: '标准禅修房',
     nameEn: 'Standard Meditation Room',
-    price: '¥888',
-    unit: '/晚',
     size: '35㎡',
     capacity: '2人',
     rating: 4,
@@ -22,8 +20,6 @@ const rooms = [
   {
     type: '豪华琉璃套房',
     nameEn: 'Deluxe Lapis Lazuli Suite',
-    price: '¥2,888',
-    unit: '/晚',
     size: '85㎡',
     capacity: '2-4人',
     rating: 5,
@@ -35,8 +31,6 @@ const rooms = [
   {
     type: 'VIP七佛阁',
     nameEn: 'VIP Seven Buddhas Villa',
-    price: '¥8,888',
-    unit: '/晚',
     size: '280㎡',
     capacity: '2-6人',
     rating: 5,
@@ -49,21 +43,15 @@ const rooms = [
 const packages = [
   {
     name: '三日身心净化套餐',
-    price: '¥6,888',
-    unit: '/人',
     includes: ['标准禅修房3晚', '藏医药体检', '每日冥想课程', '一次法会参与', '藏式药膳餐'],
   },
   {
     name: '七日全方位疗愈套餐',
-    price: '¥18,888',
-    unit: '/人',
     includes: ['豪华套房7晚', '完整色息心三法课程', '私人藏医诊疗', '朝圣导览', '开光护身符', 'NFT数字护法赠送'],
     featured: true,
   },
   {
     name: '十四日深度朝圣套餐',
-    price: '¥36,888',
-    unit: '/人',
     includes: ['豪华套房14晚', '全14座庙宇朝圣', '活佛专属开示', '藏医全套疗程', '元宇宙账户开通', '$SHANGRI代币空投'],
   },
 ];
@@ -130,8 +118,6 @@ export default function AccommodationPage() {
                       <p className="text-xs text-gray-500">{room.nameEn}</p>
                     </div>
                     <div className="text-right">
-                      <span className="text-2xl font-bold" style={{ color: room.color }}>{room.price}</span>
-                      <span className="text-gray-500 text-sm">{room.unit}</span>
                     </div>
                   </div>
 
@@ -196,10 +182,6 @@ export default function AccommodationPage() {
                   </div>
                 )}
                 <h3 className="text-lg font-semibold text-white mb-1">{pkg.name}</h3>
-                <div className="mb-4">
-                  <span className="text-3xl font-bold text-gold-500">{pkg.price}</span>
-                  <span className="text-gray-500 text-sm">{pkg.unit}</span>
-                </div>
                 <ul className="space-y-2 mb-6">
                   {pkg.includes.map((item, j) => (
                     <li key={j} className="flex items-start text-sm text-gray-300">

@@ -5,10 +5,10 @@ import { motion } from 'framer-motion';
 import { useAccount } from 'wagmi';
 
 const SERVICES = [
-  { value: 'healing', label: '藏医药疗愈体验', icon: '🌿', price: '¥3,888起' },
-  { value: 'temple', label: '寺庙朝圣之旅', icon: '☸️', price: '¥1,888起' },
-  { value: 'accommodation', label: '禅修住宿套餐', icon: '🏔️', price: '¥888/晚' },
-  { value: 'astronomy', label: '天文元宇宙体验', icon: '🌌', price: '¥2,888起' },
+  { value: 'healing', label: '藏医药疗愈体验', icon: '🌿' },
+  { value: 'temple', label: '寺庙朝圣之旅', icon: '☸️' },
+  { value: 'accommodation', label: '禅修住宿套餐', icon: '🏔️' },
+  { value: 'astronomy', label: '天文元宇宙体验', icon: '🌌' },
 ];
 
 interface FormData {
@@ -101,7 +101,6 @@ export default function BookingForm() {
               >
                 <div className="text-lg mb-1">{s.icon}</div>
                 <div className="text-white text-xs font-medium">{s.label}</div>
-                <div className="text-gold-500 text-xs">{s.price}</div>
               </button>
             ))}
           </div>
