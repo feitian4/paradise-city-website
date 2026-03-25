@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { useState, useEffect } from "react";
 
 const ADMIN_KEY = "paradise-admin-2026";
@@ -90,7 +90,7 @@ export default function AdminPageClient() {
                   <div key={b.id} style={{ background: "#1f2937", borderRadius: "0.75rem", padding: "1rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                     <div>
                       <p style={{ fontWeight: 500 }}>{b.name} <span style={{ color: "#9ca3af", fontSize: "0.875rem" }}>{b.phone || b.email}</span></p>
-                      <p style={{ color: "#9ca3af", fontSize: "0.875rem" }}>{b.service} · {b.date} · {b.people} pax</p>
+                      <p style={{ color: "#9ca3af", fontSize: "0.875rem" }}>{b.service} 路 {b.date} 路 {b.people} pax</p>
                     </div>
                     <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
                       <span style={{ padding: "0.25rem 0.5rem", borderRadius: "0.25rem", fontSize: "0.75rem", background: b.status === "confirmed" ? "#065f46" : b.status === "cancelled" ? "#7f1d1d" : "#374151" }}>{b.status || "pending"}</span>
@@ -106,7 +106,7 @@ export default function AdminPageClient() {
 
         {tab === "contact" && (
           <div style={{ background: "#1f2937", borderRadius: "0.75rem", padding: "1.5rem" }}>
-            <h2 style={{ fontSize: "1.125rem", fontWeight: 600, marginBottom: "1rem" }}>Contact Information</h2>
+            <h2 style={{ fontSize: "1.125rem", fontWeight: 600, marginBottom: "1rem" }}>Contact Information</h2>\n            <div style={{ background: "#374151", borderRadius: "0.5rem", padding: "1rem", marginBottom: "1rem" }}>\n              <p style={{ fontSize: "0.75rem", color: "#9ca3af", marginBottom: "0.25rem" }}>Address</p>\n              <p style={{ fontSize: "0.875rem", color: "#d1d5db" }}>Shangri-La City, Diqing Tibetan Autonomous Prefecture, Yunnan, China</p>\n            </div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
               <div style={{ background: "#374151", borderRadius: "0.5rem", padding: "1rem" }}>
                 <p style={{ color: "#fbbf24", marginBottom: "0.5rem", fontWeight: 600 }}>Mr. Zhu</p>
@@ -129,3 +129,4 @@ export default function AdminPageClient() {
     </div>
   );
 }
+

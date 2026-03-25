@@ -1,13 +1,13 @@
-{
+﻿{
   "common": {
     "siteName": "Paradise City",
     "siteNameEn": "Paradise City",
-    "siteNameTibetan": "གནས་མཆོག་གྲོང་ཁྱེར།",
+    "siteNameTibetan": "嘟傕綋嘟︵紜嘟樴絾嘟监絺嗉嬥絺嗑侧郊嘟勦紜嘟佮颈嘟亨舰嗉?,
     "slogan": "Your Portal to Inner Peace",
     "sloganEn": "Your Portal to Inner Peace",
     "language": "Language",
     "selectLanguage": "Select Language",
-    "chinese": "中文",
+    "chinese": "涓枃",
     "english": "English",
     "tibetan": "Tibetan",
     "learnMore": "Learn More",
@@ -170,10 +170,7 @@
       "message": "Message",
       "submit": "Submit"
     },
-    "info": {
-      "email": "Hongwei@zxmy.info",
-      "phone": "+86 13292199929"
-    },
+    "info": {\n      "address": "Shangri-La City, Diqing Tibetan Autonomous Prefecture, Yunnan, China",\n      "email": "Hongwei@zxmy.info",\n      "phone": "+86 13292199929"\n    },
     "team": [
       {
         "name": "Mr. Zhu",
@@ -200,6 +197,7 @@
       "terms": "Terms of Service",
       "sitemap": "Sitemap"
     },
-    "copyright": "© 2026 Paradise City Shangri-La. All rights reserved."
+    "copyright": "漏 2026 Paradise City Shangri-La. All rights reserved."
   }
 }
+
