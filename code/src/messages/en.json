@@ -1,13 +1,13 @@
-﻿{
+{
   "common": {
     "siteName": "Paradise City",
     "siteNameEn": "Paradise City",
-    "siteNameTibetan": "嘟傕綋嘟︵紜嘟樴絾嘟监絺嗉嬥絺嗑侧郊嘟勦紜嘟佮颈嘟亨舰嗉?,
+    "siteNameTibetan": "གནས་མཆོག་གྲོང་ཁྱེར།",
     "slogan": "Your Portal to Inner Peace",
     "sloganEn": "Your Portal to Inner Peace",
     "language": "Language",
     "selectLanguage": "Select Language",
-    "chinese": "涓枃",
+    "chinese": "中文",
     "english": "English",
     "tibetan": "Tibetan",
     "learnMore": "Learn More",
@@ -66,19 +66,34 @@
         "title": "Color Method - Nourishment",
         "subtitle": "Body Healing",
         "description": "Through Tibetan medicine diet therapy, medicinal food and body healing, purify the body and restore vitality.",
-        "benefits": ["Tibetan Diet Therapy", "Medicinal Food", "Body Massage", "Herbal Bath"]
+        "benefits": [
+          "Tibetan Diet Therapy",
+          "Medicinal Food",
+          "Body Massage",
+          "Herbal Bath"
+        ]
       },
       "breath": {
         "title": "Breath Method - Anapana",
         "subtitle": "Breath Healing",
         "description": "Through breathing meditation and highland oxygen therapy, regulate breath and calm the mind.",
-        "benefits": ["Breathing Meditation", "Highland Oxygen Therapy", "Yoga Practice", "Tai Chi"]
+        "benefits": [
+          "Breathing Meditation",
+          "Highland Oxygen Therapy",
+          "Yoga Practice",
+          "Tai Chi"
+        ]
       },
       "mind": {
         "title": "Mind Method - Dream Practice",
         "subtitle": "Spiritual Healing",
         "description": "Through dream practice and spiritual courses, purify the mind and awaken wisdom.",
-        "benefits": ["Dream Practice", "Zen Meditation", "Spiritual Courses", "Blessing Ceremonies"]
+        "benefits": [
+          "Dream Practice",
+          "Zen Meditation",
+          "Spiritual Courses",
+          "Blessing Ceremonies"
+        ]
       }
     },
     "cta": "Book Healing Experience"
@@ -170,7 +185,11 @@
       "message": "Message",
       "submit": "Submit"
     },
-    "info": {\n      "address": "Shangri-La City, Diqing Tibetan Autonomous Prefecture, Yunnan, China",\n      "email": "Hongwei@zxmy.info",\n      "phone": "+86 13292199929"\n    },
+    "info": {
+      "email": "Hongwei@zxmy.info",
+      "phone": "+86 13292199929",
+      "address": "Shangri-La City, Diqing Tibetan Autonomous Prefecture, Yunnan, China"
+    },
     "team": [
       {
         "name": "Mr. Zhu",
@@ -197,7 +216,6 @@
       "terms": "Terms of Service",
       "sitemap": "Sitemap"
     },
-    "copyright": "漏 2026 Paradise City Shangri-La. All rights reserved."
+    "copyright": "© 2026 Paradise City Shangri-La. All rights reserved."
   }
 }
-
