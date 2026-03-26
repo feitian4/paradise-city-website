@@ -189,7 +189,25 @@
       "address": "Shangri-La City, Diqing Tibetan Autonomous Prefecture, Yunnan, China",
       "email": "Hongwei@zxmy.info",
       "phone": "+86 13292199929"
-    }
+    },
+    "team": [
+      {
+        "name": "Mr. Zhu",
+        "title": "Co-Founder",
+        "whatsapp": "+86 13292199929",
+        "wechat": "Hongwei_zxmy",
+        "tel": "+86 13292199929",
+        "email": "Hongwei@zxmy.info"
+      },
+      {
+        "name": "Ms. Liu",
+        "title": "Co-Founder",
+        "whatsapp": "+86 13888888888",
+        "wechat": "Yilan_zxmy",
+        "tel": "+86 13888888888",
+        "email": "Yilan@zxmy.info"
+      }
+    ]
   },
   "footer": {
     "description": "Transform Suffering into Pure Land through Medicine Buddha's Vows",

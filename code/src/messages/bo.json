@@ -71,7 +71,25 @@
       "address": "Shangri-La City, Diqing Tibetan Autonomous Prefecture, Yunnan, China",
       "email": "Hongwei@zxmy.info",
       "phone": "+86 13292199929"
-    }
+    },
+    "team": [
+      {
+        "name": "Mr. Zhu",
+        "title": "Co-Founder",
+        "whatsapp": "+86 13292199929",
+        "wechat": "Hongwei_zxmy",
+        "tel": "+86 13292199929",
+        "email": "Hongwei@zxmy.info"
+      },
+      {
+        "name": "Ms. Liu",
+        "title": "Co-Founder",
+        "whatsapp": "+86 13888888888",
+        "wechat": "Yilan_zxmy",
+        "tel": "+86 13888888888",
+        "email": "Yilan@zxmy.info"
+      }
+    ]
   },
   "footer": {
     "description": "སྨན་བླའི་སྨོན་ལམ་གྱིས་སྡུག་བསྔལ་སྣང་བཞིན་གནས་མཆོག་ཏུ་བསྒྱུར།",
@@ -81,5 +99,104 @@
       "sitemap": "དྲ་རྒྱའི་རྒྱུ་ཆ།"
     },
     "copyright": "© 2026 གནས་མཆོག་གྲོང་ཁྱེར་ཤམ་བྷ་ལ། ཐམས་ཅད་བདག་དབང་།"
+  },
+  "digital": {
+    "metaverse": {
+      "cta": "Enter Metaverse",
+      "description": "Experience the digital manifestation of the Seven Medicine Buddha vows in seven virtual worlds.",
+      "title": "Metaverse Practice"
+    },
+    "nft": {
+      "cta": "Explore NFT Collection",
+      "description": "Twelve Yaksha Guardian Tokens, 84,000 digital protectors, each one a guardian on your spiritual journey.",
+      "title": "NFT Digital Protectors"
+    },
+    "subtitle": "Ancient Wisdom, Digital Rebirth",
+    "title": "Digital Experience",
+    "token": {
+      "cta": "Learn Tokenomics",
+      "description": "Participate in Shangri-La ecosystem and share digital dividends.",
+      "title": "$SHANGRI Token"
+    }
+  },
+  "healing": {
+    "methods": {
+      "breath": {
+        "benefits": [
+          "Breathing Meditation",
+          "Highland Oxygen Therapy",
+          "Yoga Practice",
+          "Tai Chi"
+        ],
+        "description": "Through breathing meditation and highland oxygen therapy, regulate breath and calm the mind.",
+        "subtitle": "Breath Healing",
+        "title": "Breath Method - Anapana"
+      },
+      "color": {
+        "benefits": [
+          "Tibetan Diet Therapy",
+          "Medicinal Food",
+          "Body Massage",
+          "Herbal Bath"
+        ],
+        "description": "Through Tibetan medicine diet therapy, medicinal food and body healing, purify the body and restore vitality.",
+        "subtitle": "Body Healing",
+        "title": "Color Method - Nourishment"
+      },
+      "mind": {
+        "benefits": [
+          "Dream Practice",
+          "Zen Meditation",
+          "Spiritual Courses",
+          "Blessing Ceremonies"
+        ],
+        "description": "Through dream practice and spiritual courses, purify the mind and awaken wisdom.",
+        "subtitle": "Spiritual Healing",
+        "title": "Mind Method - Dream Practice"
+      }
+    },
+    "subtitle": "Transform Suffering into Pure Land through Medicine Buddha's Vows",
+    "title": "Mind-Body Healing"
+  },
+  "sevenBuddhas": {
+    "buddhas": {
+      "buddha1": {
+        "healing": "Karma Purification Meditation",
+        "name": "Supreme Auspicious Buddha of Good Name",
+        "wish": "Eliminate Karma"
+      },
+      "buddha2": {
+        "healing": "Wisdom Courses",
+        "name": "Moon of Wisdom Buddha",
+        "wish": "Wisdom Light"
+      },
+      "buddha3": {
+        "healing": "Blessing Ceremonies",
+        "name": "Golden Light Buddha",
+        "wish": "Merits and Wisdom"
+      },
+      "buddha4": {
+        "healing": "Psychological Counseling",
+        "name": "Worry-Free Supreme Buddha",
+        "wish": "Freedom from Suffering"
+      },
+      "buddha5": {
+        "healing": "Sacred Music",
+        "name": "Dharma Sea Thunder Buddha",
+        "wish": "Dharma Voice"
+      },
+      "buddha6": {
+        "healing": "Yoga Courses",
+        "name": "Dharma Wisdom Buddha",
+        "wish": "Spiritual Freedom"
+      },
+      "buddha7": {
+        "healing": "Tibetan Medicine Holistic Healing",
+        "name": "Medicine Buddha",
+        "wish": "Heal All Beings"
+      }
+    },
+    "subtitle": "Seven Buddha Vows, Healing All Beings",
+    "title": "Seven Medicine Buddhas"
   }
 }
